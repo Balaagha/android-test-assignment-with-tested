@@ -11,9 +11,14 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.ColorRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
 import androidx.fragment.app.Fragment
+import com.example.androidimpltemplate.utils.DataStore.DATASTORE_NAME
 import java.lang.ref.WeakReference
 
+val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = DATASTORE_NAME)
 
 val Context.connectivityManager: ConnectivityManager
     get() =
