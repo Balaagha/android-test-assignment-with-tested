@@ -5,7 +5,6 @@ plugins {
     id(Plugins.kotlinAndroidExtensions)
     id(Plugins.navigationSafeArgsKotlin)
     id(Plugins.daggerHiltAndroidPlugin)
-    id("org.jetbrains.kotlin.android")
 }
 
 android {

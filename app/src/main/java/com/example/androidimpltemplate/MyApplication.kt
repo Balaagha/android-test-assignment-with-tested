@@ -21,5 +21,9 @@ class MyApplication : Application() {
         )
 
         networkStatusListenerHelper.init()
+
+        if(BuildConfig.DEBUG){
+//            Timber.plant(DebugTree())
+        }
     }
 }

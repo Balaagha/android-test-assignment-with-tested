@@ -29,6 +29,7 @@ object AppDependencies {
         add(Room.roomRuntime)
 
         add(DataStore.datastorePreferences)
+        add(DataStore.datastorePreferencesCore)
 
         add(Coroutines.kotlinxCoroutinesCore)
         add(Coroutines.kotlinxCoroutinesAndroid)
@@ -53,6 +54,8 @@ object AppDependencies {
         add(Animation.lottie)
 
         add(Glide.glideImpl)
+
+        add(Logger.timber)
 
     }
 
@@ -157,6 +160,8 @@ object AppDependencies {
     object DataStore {
         const val datastorePreferences =
             "androidx.datastore:datastore-preferences:${Versions.datastorePreferencesVersion}"
+        const val datastorePreferencesCore =
+            "androidx.datastore:datastore-preferences-core:${Versions.datastorePreferencesVersion}"
     }
 
     object Room {
@@ -222,7 +227,10 @@ object AppDependencies {
 
         // optional - GCMNetworkManager support
         val workGcm = "androidx.work:work-gcm:$work_version"
+    }
 
+    object Logger {
+        val timber = "com.jakewharton.timber:timber:${Versions.timberVersion}"
     }
 
 }

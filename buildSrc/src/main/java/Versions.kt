@@ -44,4 +44,6 @@ object Versions {
     const val hiltNavigationVersion = "1.0.0"
     const val hiltNavigationFragmentVersion = "1.0.0"
 
+    // Timber
+    const val timberVersion = "5.0.1"
 }
