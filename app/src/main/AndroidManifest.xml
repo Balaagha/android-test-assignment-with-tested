@@ -19,18 +19,21 @@
 
         <activity
             android:name="com.example.androidimpltemplate.menu.MenuActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.example.androidimpltemplate.ui.MainActivity"/>
+
+        <activity-alias
+            android:name="Launcher"
+            android:targetActivity=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity-alias>
 
-        </activity>
-
-        <activity
-            android:name="com.example.androidimpltemplate.ui.MainActivity"
-            android:exported="true" />
     </application>
 
 </manifest>
