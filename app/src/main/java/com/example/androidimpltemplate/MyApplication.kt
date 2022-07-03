@@ -5,6 +5,7 @@ import androidx.core.app.NotificationManagerCompat
 import com.example.androidimpltemplate.manager.network.NetworkStatusListenerHelper
 import com.example.androidimpltemplate.manager.notfication.NotificationHelper
 import dagger.hilt.android.HiltAndroidApp
+import timber.log.Timber
 import javax.inject.Inject
 
 @HiltAndroidApp
@@ -23,7 +24,7 @@ class MyApplication : Application() {
         networkStatusListenerHelper.init()
 
         if(BuildConfig.DEBUG){
-//            Timber.plant(DebugTree())
+            Timber.plant(Timber.DebugTree())
         }
     }
 }
